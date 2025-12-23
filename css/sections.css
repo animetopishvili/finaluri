@@ -1,0 +1,20 @@
+section {
+  min-height: 100vh;
+  padding: 100px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section:nth-child(odd) {
+  background-color: #1a1a1a;
+}
+
+section:nth-child(even) {
+  background-color: #222;
+}
+
+section h2 {
+  font-size: 3rem;
+  color: #e8944c;
+}
