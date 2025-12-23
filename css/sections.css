@@ -975,11 +975,6 @@ section h2 {
   text-align: center;
 }
 
-.footer-border {
-  height: 4px;
-  background: linear-gradient(to right, #3b82f6, #3b82f6);
-}
-
 @media (max-width: 768px) {
   .footer {
     padding: 50px 20px 0;
