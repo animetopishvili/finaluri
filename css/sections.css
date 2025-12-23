@@ -589,3 +589,413 @@ section h2 {
     height: 250px;
   }
 }
+
+.testimonials-section {
+  background-color: #1a1a1a !important;
+  padding: 100px 60px;
+}
+
+.testimonials-container {
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+}
+
+.testimonials-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.testimonials-description {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #b0b0b0;
+  max-width: 600px;
+  margin: 0 auto 50px;
+}
+
+.testimonial-slider {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.testimonial-slide {
+  display: none;
+}
+
+.testimonial-slide.active {
+  display: block;
+}
+
+.testimonial-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 40px;
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  text-align: left;
+}
+
+.testimonial-avatar {
+  flex-shrink: 0;
+}
+
+.testimonial-avatar img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-content {
+  flex: 1;
+  position: relative;
+}
+
+.quote-mark {
+  font-size: 2rem;
+  color: #e8944c;
+  font-family: Georgia, serif;
+  line-height: 1;
+}
+
+.quote-mark.end {
+  display: inline;
+}
+
+.testimonial-text {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 20px;
+  display: inline;
+}
+
+.testimonial-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 4px;
+  margin-top: 15px;
+}
+
+.testimonial-role {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.testimonial-dots {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.testimonial-dot {
+  width: 40px;
+  height: 8px;
+  border-radius: 4px;
+  border: none;
+  background-color: #444;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.testimonial-dot:hover {
+  background-color: #666;
+}
+
+.testimonial-dot.active {
+  background-color: #e8944c;
+}
+
+@media (max-width: 768px) {
+  .testimonials-section {
+    padding: 80px 20px;
+  }
+
+  .testimonials-title {
+    font-size: 2rem;
+  }
+
+  .testimonial-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .testimonial-avatar img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .testimonial-content {
+    text-align: center;
+  }
+}
+
+.contact-section {
+  background-color: #1a1a1a !important;
+  padding: 100px 60px;
+}
+
+.contact-container {
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.contact-description {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #b0b0b0;
+  margin-bottom: 40px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  flex: 1;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  background-color: #fff;
+  color: #333;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.contact-form textarea {
+  border-radius: 20px;
+  resize: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  box-shadow: 0 0 0 3px rgba(232, 148, 76, 0.3);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #999;
+}
+
+.btn-submit {
+  align-self: center;
+  padding: 14px 50px;
+  background-color: #e8944c;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #d4833f;
+  transform: translateY(-2px);
+}
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-overlay.active {
+  display: flex;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #999;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  color: #333;
+}
+
+.modal-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #e8944c;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.modal-text {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.modal-btn {
+  padding: 12px 40px;
+  background-color: #e8944c;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-btn:hover {
+  background-color: #d4833f;
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 80px 20px;
+  }
+
+  .contact-title {
+    font-size: 2rem;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 14px 18px;
+  }
+}
+
+.footer {
+  background-color: #1a1a1a;
+  padding: 60px 60px 0;
+  position: relative;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 40px;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-nav a {
+  color: #b0b0b0;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #e8944c;
+}
+
+.footer-social {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-social a {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #e8944c;
+}
+
+.footer-copyright {
+  color: #666;
+  font-size: 0.85rem;
+  padding-top: 30px;
+  border-top: 1px solid #333;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-border {
+  height: 4px;
+  background: linear-gradient(to right, #3b82f6, #3b82f6);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 50px 20px 0;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-social {
+    order: -1;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
